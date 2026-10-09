@@ -1,0 +1,12 @@
+name = "yaeju1205/refer"
+version = "0.1.0"
+description = "A tiny Luau library for sharing a mutable value by refer"
+authors = ["yaeju1205"]
+repository = "https://github.com/yaeju1205/refer.luau"
+license = "MIT"
+
+[target]
+environment = "luau"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
