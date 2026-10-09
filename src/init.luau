@@ -14,7 +14,7 @@ print("c", refer.into(c))
 ```
 ]=]
 export type refer<T> = {
-    inner: T
+	inner: T,
 }
 
 const refer = {}
@@ -27,9 +27,9 @@ const num_refer = refer.new(1)
 ```
 ]=]
 function refer.new<T>(inner: T): refer<T>
-    return {
-        inner = inner,
-    }
+	return {
+		inner = inner,
+	}
 end
 
 --[=[
@@ -40,7 +40,7 @@ const num = refer.into(num_refer)
 ```
 ]=]
 function refer.into<T>(self: refer<T>): T
-    return self.inner
+	return self.inner
 end
 
 --[=[
@@ -53,8 +53,8 @@ print(refer.into(num_refer))
 ```
 ]=]
 function refer.as<T>(self: refer<T>, inner: T): T
-    self.inner = inner
-    return inner
+	self.inner = inner
+	return inner
 end
 
 return refer
