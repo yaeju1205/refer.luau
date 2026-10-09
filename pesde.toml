@@ -5,8 +5,17 @@ authors = ["yaeju1205"]
 repository = "https://github.com/yaeju1205/refer.luau"
 license = "MIT"
 
+includes = [
+    "pesde.toml",
+    "README.md",
+    "LICENSE.md",
+    "src/*.luau",
+]
+
 [target]
 environment = "luau"
+lib = "src/init.luau"
+build_files = [ "src" ]
 
 [indices]
 default = "https://github.com/pesde-pkg/index"
